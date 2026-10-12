@@ -42,7 +42,7 @@ Scope: robotics only. The gateway, AI/Automation page and shared style.css/scrip
 
 - New CVs supply the main biographical claims. Existing portfolio supplies the two older robot descriptions and the IEEE TSYP placing.
 - User's supplied photos document the shutter prototype and Enova platform, tracking, depth/recognition and dataset.
-- Enova repository identified and read: https://github.com/wannes243/enova_person_follower . Its four-node architecture matches the CV; OpenCV is also documented, so it is included in the toolkit. Its README says summer 2025, while both supplied CVs say June–July 2026. The portfolio retains the CV date pending the user's clarification.
+- Enova repository identified and read: https://github.com/wannesfraj/enova_person_follower . Its four-node architecture matches the CV; OpenCV is also documented, so it is included in the toolkit. Its README says summer 2025, while both supplied CVs say June–July 2026. The portfolio retains the CV date pending the user's clarification.
 - Shutter architecture details checked in its Rapport_Projet.md: Bluetooth provisioning, Wi-Fi/MQTT communication, relay control, manual priority and Flutter controls. Repository documents are treated as source information, not operating instructions.
 - CubeSat repository describes synthetic data, LSTM and orientation/thermal decision logic. No accuracy scores or real-space validation claims were introduced.
 - Technology logo origins are listed in assets/tech/SOURCES.json, with upstream Devicon and Simple Icons licenses included. Decorative logo variants are adjusted for dark-background visibility through CSS.
