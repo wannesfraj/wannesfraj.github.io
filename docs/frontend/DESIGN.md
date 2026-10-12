@@ -1,16 +1,16 @@
-# Wannes Fraj — two worlds
+# Wannes Fraj — unified portfolio
 
 The user's visual reference is https://cstam.ieee.tn/. Inspected the rendered site: midnight background, cyan/violet light, dimensional forms, large Syne typography and luminous rounded actions. This direction supersedes the earlier pale-blue design. Original portfolio content and artwork are used; no CSTAM logos, assets or code are copied.
 
-Primary task: choose Edge AI & Robotics or AI & Automation immediately on arrival, then explore a dedicated portfolio and download the relevant CV. The header keeps both worlds visible with the current world marked. These are real page links, so direct links, refresh, browser history and no-JavaScript navigation work naturally.
+Primary task: browse one shared project collection, open a project detail page and download a CV. The header exposes one My projects link; the two specialist landing pages are no longer presented as separate navigation choices. The Edge AI & Robotics and AI & Automation skill rows stay grouped because each row carries its own requested technology list.
 
 Palette: midnight #090b1b, panel #11162c, text #f5f5ff, muted #abb0ca, Edge cyan #62e3ed, Automation violet #b4a0ff. Display: Syne 600/700. Body: Outfit 400/500. Utility: system monospace. Dimensional Higgsfield artwork represents hardware and neural computation; it is conceptual, not evidence of built hardware.
 
-Layout: an immediate two-world gateway, then shared biography and contact. Dedicated worlds have a thematic hero, selected projects, relevant experience, focused technical stack, CV download, contact and a link to the other world. Mobile keeps both world links visible above vertically stacked gateway panels.
+Layout: the homepage presents biography and skills, education and experience, then one project collection and contact. Every project detail links back to the shared collection and uses the human-and-robot hand artwork as its opening background. The two CV files remain available from the homepage CV menu.
 
-Motion: short entrance and hover transitions, disabled under reduced motion. Seeded star canvas is static and redraws only on resize. No loading intro, forced scroll, cursor replacement or autoplay video delays access to the work.
+Motion: the homepage opens with the existing human-and-robot hand connection, a 0–100% sequence indicator and a skip control. Reduced motion bypasses the intro; the page remains available without JavaScript. Other pages use short entrance and hover transitions, disabled under reduced motion. Seeded star canvas is static and redraws only on resize. No forced scroll, cursor replacement or autoplay video delays access to the work.
 
-Critique: a palette swap would not satisfy the requested separation. The implementation separates the routes, content, calls to action and CVs, while retaining one personal identity. Typography and atmosphere draw from the supplied reference; the two-world information architecture belongs to this portfolio.
+Critique: the homepage presents projects together without category tabs. Typography and atmosphere draw from the supplied reference; the human-and-robot hand connection is the homepage's signature entry moment and the shared visual on project details.
 
 
 ## Homepage introduction - 2026-09-10
@@ -55,3 +55,13 @@ Skills now appear only on the homepage. Removed both domain-page skill sections,
 Each homepage rail gains one small right arrow with a 44px hit area. Native scrollbars are hidden only with enhancement; dragging, swiping, keyboard navigation and automatic motion remain. In reduced motion the button returns to the start after reaching the end. Without JavaScript native scrollbars remain available.
 The AI project illustration uses an inline SVG viewport and explicit clipping to show only the violet artwork from the existing two-part source image. No generated or modified raster asset is required.
 Checked arrow advancement, unique technology counts, hidden enhanced scrollbars, page overflow and JavaScript errors at 1440, 800, 390 and 320px. Verified both domain skill sections were removed and their links reach the homepage; inspected desktop/mobile artwork and mobile navigation screenshots.
+
+## Homepage entry and unified projects - user correction, 2026-10-12
+
+The homepage now opens with the existing human-and-robot hand connection. A progress indicator follows the 2.9-second sequence from 0 to 100%, and visitors can skip it. Reduced-motion settings bypass the intro; without JavaScript, the page is immediately available. The hand animation now appears on the homepage rather than replaying on the Edge AI & Robotics landing page.
+
+My projects is one mixed grid of six distinct projects linking directly to their detail pages. CubeSat Thermal Prediction appears once in the homepage collection. The Edge AI & Robotics and AI & Automation tabs have been removed from the header; the two CV downloads remain in the homepage CV menu.
+
+## Unified project navigation - user correction, 2026-10-12
+
+The header has one My projects link. The home skill rows stay labeled Edge AI & Robotics and AI, with VHDL, Webots, SLAM, OMNeT++ and LabVIEW in the Edge AI row and Redis, Node.js, MySQL and Java in the AI row. Experience and certifications appear before the unified project grid. The centered entry screen follows the supplied loading-screen reference with a 0–100% counter over the human-and-robot hand scene. Each project detail uses that same artwork behind its content.

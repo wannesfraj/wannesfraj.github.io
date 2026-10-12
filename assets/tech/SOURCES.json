@@ -33,5 +33,14 @@
   "ollama": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ollama.svg",
   "django": "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg",
   "gitlab": "https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg",
-  "jupyter": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg"
+  "jupyter": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg",
+  "vhdl": "https://www.vhdl.org/images/about/policies/logos/vhdl_logo.png (transparent, scalable wordmark traced to assets/tech/vhdl.svg)",
+  "webots": "https://raw.githubusercontent.com/cyberbotics/webots/master/resources/icons/core/webots64x64.png (official original icon, used without recoloring)",
+  "slam": "Code-native mapping/localisation pictogram; SLAM has no universal product logo",
+  "omnetpp": "https://raw.githubusercontent.com/omnetpp/omnetpp/omnetpp-6.x/images/logo/logo128.png",
+  "labview": "https://www.pngkey.com/png/full/802-8022387_ni-labview-2017-logo.png (high-resolution transparent National Instruments LabVIEW wordmark)",
+  "redis": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg",
+  "nodejs": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+  "mysql": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+  "dart": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg"
 }

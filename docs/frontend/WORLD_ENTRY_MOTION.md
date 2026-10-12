@@ -1,6 +1,8 @@
 # World entry motion
 
-User-requested experiment on the two world landing pages only. Preserve the existing wallpaper assets, content, links and page layout.
+Current behavior: the homepage opens with a centered, skippable 0–100% loading screen over the human-and-robot hand scene. Each project detail uses the same artwork as a static background and keeps its project content visible immediately. Reduced motion and JavaScript-disabled visits bypass the homepage loader.
+
+The following notes document the earlier motion experiments on the specialist pages.
 
 - Edge AI: temporary SVG layers split the existing image between the fingertips. Each hand starts 100 source pixels farther away and moves inward over 2.6 seconds. Feathered edges soften the split; a cyan contact glow and a crossfade return to the original image by 2.9 seconds.
 - AI & Automation: the hand starts 160 source pixels left and 26 pixels below its final position, then approaches the stationary brain over 2.8 seconds. The contact glow starts at 2.2 seconds, followed by current flowing from the fingertip into the brain and outward to the network nodes. A final crossfade restores the exact original image; temporary layers are removed at 4.9 seconds. Feathered SVG masks reuse the source image, with artwork below the readability overlay and electrical effects above it.
@@ -12,3 +14,7 @@ Checked in Chromium at 1440 and 390px for both routes: animated transforms/curre
 Files: `background-motion.js`, `background-motion.css`, and the two landing-page includes. Local check script and screenshots: `C:/Users/wannes/.cache/portfolio-visual-check/check-background-motion.cjs`.
 
 Neural approach refinement verified in Chromium at 1440 and 390px: the hand moves while the brain remains fixed, electrical overlays stay invisible during the initial approach and appear near contact, and both SVG layers are removed after completion. No horizontal overflow or JavaScript errors. Reduced-motion startup, changing the preference during playback, JavaScript-disabled fallback, and the Edge entry sequence passed. Start/contact/current screenshots reviewed. Local verification: `C:/Users/wannes/.cache/portfolio-visual-check/check-neural-approach.cjs`.
+
+## Homepage handoff - user correction, 2026-10-12
+
+The human-and-robot hand sequence runs as the homepage opening scene. Its 0–100% progress indicator follows the 2.9-second animation, and a visible Skip intro button plus Escape reveal the page early. Reduced-motion settings and JavaScript-disabled visits bypass the loader. The loader uses a centered identity, large percentage and download label inspired by the supplied reference.

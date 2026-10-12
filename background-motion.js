@@ -23,7 +23,7 @@
 
   async function start() {
     try { await original.decode(); } catch { return; }
-    if (reducedMotion.matches) return;
+    if (reducedMotion.matches || backdrop.dataset.entryMotionCancelled === 'true' || !backdrop.isConnected) return;
     const scene = svgElement('svg', {
       class: 'world-entry-scene', viewBox: '0 0 1536 1024',
       'aria-hidden': 'true', focusable: 'false',
@@ -57,10 +57,10 @@
         animate(hand, [
           { transform: `translateX(${offset}px)` },
           { transform: 'translateX(0px)' },
-        ], { duration: 2600, easing: 'cubic-bezier(0.16, 1, 0.3, 1)' });
-        animate(hand, [{ opacity: 1 }, { opacity: 1, offset: 0.72 }, { opacity: 0 }], { duration: 2800 });
+        ], { duration: 1300, easing: 'cubic-bezier(0.16, 1, 0.3, 1)' });
+        animate(hand, [{ opacity: 1 }, { opacity: 1, offset: 0.72 }, { opacity: 0 }], { duration: 1400 });
       }
-      animate(original, [{ opacity: 0 }, { opacity: 0, offset: 0.72 }, { opacity: 1 }], { duration: 2800 });
+      animate(original, [{ opacity: 0 }, { opacity: 0, offset: 0.72 }, { opacity: 1 }], { duration: 1400 });
       const glow = svgElement('radialGradient', { id: 'entry-contact-glow' }, definitions);
       svgElement('stop', { offset: '0%', 'stop-color': '#e3ffff', 'stop-opacity': '.95' }, glow);
       svgElement('stop', { offset: '24%', 'stop-color': '#86f5ff', 'stop-opacity': '.65' }, glow);
@@ -70,7 +70,7 @@
       }, scene);
       animate(contact, [
         { opacity: 0 }, { opacity: 0.9, offset: 0.4 }, { opacity: 0 },
-      ], { delay: 1200, duration: 1700, easing: 'ease-in-out' });
+      ], { delay: 500, duration: 900, easing: 'ease-in-out' });
     } else {
       // Move only the hand; the brain stays anchored in the original composition.
       // Feather the dark gap between them instead of modifying the source image.
@@ -155,7 +155,7 @@
       }
     }
 
-    function cleanup() {
+    function cleanup(interrupted = false) {
       if (finished) return;
       finished = true;
       backdrop.classList.remove('entry-motion-running');
@@ -164,6 +164,8 @@
       document.removeEventListener('visibilitychange', visibility);
       reducedMotion.removeEventListener('change', preference);
       compact.removeEventListener('change', framing);
+      window.removeEventListener('portfolio:entry-motion-skip', skipMotion);
+      window.dispatchEvent(new CustomEvent('portfolio:entry-motion-end', { detail: { interrupted } }));
     }
     function visibility() {
       animations.forEach(animation => {
@@ -171,11 +173,16 @@
         else if (!document.hidden && animation.playState === 'paused') animation.play();
       });
     }
-    function preference() { if (reducedMotion.matches) cleanup(); }
+    function preference() { if (reducedMotion.matches) cleanup(true); }
+    function skipMotion() { cleanup(true); }
 
     // Insert below the existing readability overlay and remove all layers afterward.
     backdrop.append(...layers.slice().reverse());
     backdrop.classList.add('entry-motion-running');
+    window.addEventListener('portfolio:entry-motion-skip', skipMotion);
+    window.dispatchEvent(new CustomEvent('portfolio:entry-motion-start', {
+      detail: { duration: backdrop.dataset.entryMotion === 'hands' ? 1400 : 4900 },
+    }));
     document.addEventListener('visibilitychange', visibility);
     reducedMotion.addEventListener('change', preference);
     compact.addEventListener('change', framing);

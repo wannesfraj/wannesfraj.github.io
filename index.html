@@ -4,6 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#090b1b" />
+    <script>
+      if (
+        typeof Element !== "undefined" &&
+        typeof Element.prototype.animate === "function" &&
+        window.matchMedia &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ) {
+        document.documentElement.classList.add("home-entry-pending");
+      }
+    </script>
     <meta
       name="description"
       content="Explore Wannes Fraj's projects in AI, robotics, embedded systems and workflow automation."
@@ -31,15 +41,47 @@
     <meta name="twitter:image:alt" content="Portrait de Wannes Fraj" />
     <link rel="icon" href="assets/favicon.svg?v=wf2" type="image/svg+xml" />
     <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=skills-original-logos-v4" />
+    <link rel="stylesheet" href="background-motion.css?v=home-entry" />
     <script src="script.js" defer></script>
     <script src="home-hero.js" defer></script>
     <script src="profile-stack.js" defer></script>
     <script src="home-skills.js" defer></script>
+    <script src="home-entry.js?v=1400ms" defer></script>
+    <script src="background-motion.js?v=entry-1400ms" defer></script>
   </head>
   <body class="world-gateway with-wallpaper">
     <div class="page-wallpaper" aria-hidden="true">
       <img src="assets/home-ai-robotics-balanced.webp" alt="" width="1536" height="1024" />
+    </div>
+    <div class="home-entry-loader" data-entry-motion="hands">
+      <img src="assets/edge-human-robot.webp" alt="" aria-hidden="true" width="1536" height="1024" fetchpriority="high" />
+      <p class="sr-only" data-entry-status role="status">Downloading portfolio assets.</p>
+      <button class="home-entry-skip" data-entry-skip type="button">Skip intro</button>
+      <div class="home-entry-content">
+        <div class="home-entry-identity">
+          <img class="home-entry-logo" src="assets/favicon.svg" alt="" width="82" height="82" />
+          <p class="home-entry-kicker">WANNES FRAJ</p>
+        </div>
+        <div class="home-entry-meter">
+          <span class="home-entry-percent" data-entry-percent aria-hidden="true">0%</span>
+          <div class="home-entry-meter-labels">
+            <span id="home-entry-progress-label">Downloading assets...</span>
+          </div>
+          <div
+            class="home-entry-progress"
+            data-entry-progress
+            role="progressbar"
+            aria-labelledby="home-entry-progress-label"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+            aria-valuetext="0 percent"
+          >
+            <span data-entry-progress-fill></span>
+          </div>
+        </div>
+      </div>
     </div>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
@@ -50,15 +92,11 @@
           aria-label="Wannes Fraj — homepage"
           ><img class="monogram" src="assets/favicon.svg" alt="" width="34" height="34" aria-hidden="true" /><span>Wannes Fraj</span></a
         >
-        <div class="world-tabs" role="group" aria-label="Portfolio worlds">
-          <a class="nav-projects" href="#projects">Projects</a>
-          <a href="edge-ai.html"
-            ><span class="tab-dot edge-dot" aria-hidden="true"></span>Edge AI
-            <span class="tab-extra">&amp; Robotics</span></a
-          ><a href="ai-automation.html"
-            ><span class="tab-dot ai-dot" aria-hidden="true"></span>AI
-            <span class="tab-extra">&amp;</span> Automation</a
-          >
+        <div class="site-sections" role="group" aria-label="Portfolio sections">
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certificates</a>
+          <a href="#beyond">Experience</a>
+          <a href="#about">About me</a>
         </div>
         <a class="nav-contact" href="#contact"
           >Let’s talk <span aria-hidden="true">↗</span></a
@@ -112,14 +150,19 @@
             <div class="home-skills-rail" role="region" aria-labelledby="home-edge-skills" tabindex="0">
               <ul>
               <li><img src="assets/tech/ros.svg" alt="" width="64" height="64" loading="lazy" /><span>ROS 2</span></li>
+              <li><img class="tech-mark" src="assets/tech/slam.svg" alt="" width="64" height="64" loading="lazy" /><span>SLAM</span></li>
               <li><img src="assets/tech/gazebo.svg" alt="" width="64" height="64" loading="lazy" /><span>Gazebo</span></li>
+              <li><img class="tech-mark tech-dark-logo" src="assets/tech/webots.png" alt="" width="64" height="64" loading="lazy" /><span>Webots</span></li>
+              <li><img class="tech-mark" src="assets/tech/omnetpp.png" alt="" width="64" height="64" loading="lazy" /><span>OMNeT++</span></li>
               <li><img src="assets/tech/opencv.svg" alt="" width="64" height="64" loading="lazy" /><span>OpenCV</span></li>
-              <li><img src="assets/tech/cplusplus.svg" alt="" width="64" height="64" loading="lazy" /><span>C++</span></li>
-              <li><img src="assets/tech/esp32.svg" alt="" width="64" height="64" loading="lazy" /><span>ESP32</span></li>
-              <li><img src="assets/tech/platformio.svg" alt="" width="64" height="64" loading="lazy" /><span>PlatformIO</span></li>
-              <li><img src="assets/tech/matlab.svg" alt="" width="64" height="64" loading="lazy" /><span>MATLAB</span></li>
-              <li><img src="assets/tech/mqtt.svg" alt="" width="64" height="64" loading="lazy" /><span>MQTT</span></li>
               <li><img src="assets/tech/apachekafka.svg" alt="" width="64" height="64" loading="lazy" /><span>Apache Kafka</span></li>
+              <li><img src="assets/tech/mqtt.svg" alt="" width="64" height="64" loading="lazy" /><span>MQTT</span></li>
+              <li><img src="assets/tech/matlab.svg" alt="" width="64" height="64" loading="lazy" /><span>MATLAB</span></li>
+              <li><img class="tech-mark tech-wordmark tech-dark-logo" src="assets/tech/labview-logo.png" alt="" width="116" height="64" loading="lazy" /><span>LabVIEW</span></li>
+              <li><img src="assets/tech/platformio.svg" alt="" width="64" height="64" loading="lazy" /><span>PlatformIO</span></li>
+              <li><img src="assets/tech/dart.svg" alt="" width="64" height="64" loading="lazy" /><span>Dart</span></li>
+              <li><img class="tech-mark tech-wordmark" src="assets/tech/vhdl.svg" alt="" width="120" height="42" loading="lazy" /><span>VHDL</span></li>
+              <li><img src="assets/tech/cplusplus.svg" alt="" width="64" height="64" loading="lazy" /><span>C++</span></li>
             </ul>
             </div>
           </div>
@@ -137,48 +180,12 @@
               <li><img src="assets/tech/fastapi.svg" alt="" width="64" height="64" loading="lazy" /><span>FastAPI</span></li>
               <li><img src="assets/tech/docker.svg" alt="" width="64" height="64" loading="lazy" /><span>Docker</span></li>
               <li><img src="assets/tech/kubernetes.svg" alt="" width="64" height="64" loading="lazy" /><span>Kubernetes</span></li>
+              <li><img src="assets/tech/redis.svg" alt="" width="64" height="64" loading="lazy" /><span>Redis</span></li>
+              <li><img src="assets/tech/nodejs.svg" alt="" width="64" height="64" loading="lazy" /><span>Node.js</span></li>
+              <li><img src="assets/tech/mysql.svg" alt="" width="64" height="64" loading="lazy" /><span>MySQL</span></li>
+              <li><img src="assets/tech/java.svg" alt="" width="64" height="64" loading="lazy" /><span>Java</span></li>
             </ul>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="gateway-hero projects-gateway" id="projects" aria-labelledby="gateway-title">
-        <span id="worlds" aria-hidden="true"></span>
-        <div class="container gateway-inner">
-          <div class="gateway-intro">
-            <h2 id="gateway-title">My projects</h2>
-            <p>Explore what I build in robotics and AI automation.</p>
-          </div>
-          <div class="world-portals">
-            <a class="portal portal-edge" href="edge-ai.html#projects"
-              ><div class="portal-art" aria-hidden="true">
-                <img class="portal-image" src="assets/edge-robot-studio.webp" alt="" width="1536" height="1024" />
-              </div>
-              <div class="portal-content">
-                <h3>Edge AI <span>&amp; Robotics</span></h3>
-                <p>
-                  Person-following robots, smart shutters and CubeSat thermal prediction.
-                </p>
-                <div class="portal-entry">
-                  View robotics projects
-                  <span class="portal-arrow" aria-hidden="true">↗</span>
-                </div>
-              </div></a
-            ><a class="portal portal-ai" href="ai-automation.html#projects"
-              ><div class="portal-art" aria-hidden="true">
-                <svg class="portal-image" viewBox="1080 180 720 720" aria-hidden="true" focusable="false"><defs><clipPath id="ai-artwork-crop"><rect x="1080" y="180" width="720" height="720" /></clipPath></defs><image href="assets/two-worlds.webp" width="1920" height="1080" clip-path="url(#ai-artwork-crop)" /></svg>
-              </div>
-              <div class="portal-content">
-                <h3>AI <span>&amp; Automation</span></h3>
-                <p>
-                  EventPlanner, bicycle demand forecasting and machine learning applications.
-                </p>
-                <div class="portal-entry">
-                  View AI projects
-                  <span class="portal-arrow" aria-hidden="true">↗</span>
-                </div>
-              </div></a
-            >
           </div>
         </div>
       </section>
@@ -224,7 +231,6 @@
             <div class="tags wie-tools" aria-label="Technologies">
               <span>AI engineering</span><span>Django</span><span>Docker</span><span>Kubernetes</span>
             </div>
-            <a class="inline-link experience-link" href="ai-automation.html#experience">Explore my experience <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="wie-experience" aria-labelledby="enova-role-title">
@@ -270,6 +276,74 @@
         </article>
         </div>
         </div>
+      </section>
+      <section class="home-projects" id="projects" aria-labelledby="projects-title">
+        <div class="container section">
+          <div class="section-heading home-projects-heading">
+            <div>
+              <p class="eyebrow">SELECTED WORK</p>
+              <h2 id="projects-title">Projects</h2>
+            </div>
+          </div>
+          <div class="home-projects-grid">
+            <a class="home-project-card" href="project-enova-person-following.html" aria-label="Explore the Intelligent Person Following project">
+              <span class="home-project-image"><img src="assets/robotics/enova-robot.jpg" alt="" loading="lazy" decoding="async" /></span>
+              <div class="home-project-copy">
+                <p class="home-project-meta"><span>Enova Robotics</span><span>2026</span></p>
+                <h3 class="home-project-title">Intelligent Person Following</h3>
+                <p class="home-project-description">A real-time robot pipeline for detecting, identifying and following a person.</p>
+                <span class="home-project-action">Explore project <span aria-hidden="true">&#8599;</span></span>
+              </div>
+            </a>
+            <a class="home-project-card" href="project-smart-home-shutters.html" aria-label="Explore the Smart Home Shutters project">
+              <span class="home-project-image"><img src="assets/robotics/shutters-demo-2.webp" alt="" loading="lazy" decoding="async" /></span>
+              <div class="home-project-copy">
+                <p class="home-project-meta"><span>Embedded systems</span><span>2026</span></p>
+                <h3 class="home-project-title">Smart Home Shutters</h3>
+                <p class="home-project-description">Connected shutters with ESP32 firmware, a Flutter app and a physical manual override.</p>
+                <span class="home-project-action">Explore project <span aria-hidden="true">&#8599;</span></span>
+              </div>
+            </a>
+            <a class="home-project-card" href="project-eventplanner.html" aria-label="Explore the EventPlanner project">
+              <span class="home-project-image"><img src="assets/automation/n8n-award.jpg" alt="" loading="lazy" decoding="async" /></span>
+              <div class="home-project-copy">
+                <p class="home-project-meta"><span>2nd place &middot; n8n Hackathon</span><span>2026</span></p>
+                <h3 class="home-project-title">EventPlanner</h3>
+                <p class="home-project-description">An agentic chatbot that turns an event request into a multi-step workflow using n8n, LLMs and APIs.</p>
+                <span class="home-project-action">Explore project <span aria-hidden="true">&#8599;</span></span>
+              </div>
+            </a>
+            <a class="home-project-card" href="project-tsyp-autonomous-delivery.html" aria-label="Explore the Autonomous Delivery Fleet project">
+              <span class="home-project-image"><img src="assets/robotics/tsyp13-award.jpg" alt="" loading="lazy" decoding="async" /></span>
+              <div class="home-project-copy">
+                <p class="home-project-meta"><span>3rd place &middot; TSYP 13</span><span>2025</span></p>
+                <h3 class="home-project-title">Autonomous Delivery Fleet</h3>
+                <p class="home-project-description">A team project exploring coordinated delivery robots and dynamic routing without a central controller.</p>
+                <span class="home-project-action">Explore project <span aria-hidden="true">&#8599;</span></span>
+              </div>
+            </a>
+            <a class="home-project-card" href="project-cubesat-thermal.html" aria-label="Explore the CubeSat Thermal Prediction project">
+              <span class="home-project-image"><img src="assets/cubesat-orbit.webp" alt="" loading="lazy" decoding="async" /></span>
+              <div class="home-project-copy">
+                <p class="home-project-meta"><span>Time-series learning</span><span>2025</span></p>
+                <h3 class="home-project-title">CubeSat Thermal Prediction</h3>
+                <p class="home-project-description">Forecasting thermal behavior and solar-facing orientations with synthetic orbital data and an LSTM.</p>
+                <span class="home-project-action">Explore project <span aria-hidden="true">&#8599;</span></span>
+              </div>
+            </a>
+            <a class="home-project-card" href="project-bicycle-demand.html" aria-label="Explore the Bicycle Demand Forecasting project">
+              <span class="home-project-image"><img src="assets/automation/bicycle-demand-cover.webp" alt="" loading="lazy" decoding="async" /></span>
+              <div class="home-project-copy">
+                <p class="home-project-meta"><span>MindShift 2.0 Hackathon</span><span>2025</span></p>
+                <h3 class="home-project-title">Bicycle Demand Forecasting</h3>
+                <p class="home-project-description">Rental data exploration and regression model selection, brought into the Bike Planner application.</p>
+                <span class="home-project-action">Explore project <span aria-hidden="true">&#8599;</span></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section container profile-extras">
         <section class="certifications profile-stack" aria-labelledby="certifications-title" id="certifications">
           <div class="stack-heading">
           <h2 id="certifications-title">Certifications</h2>
@@ -321,6 +395,7 @@
           </div>
         </a>
       </section>
+
       <section
         aria-labelledby="contact-title"
         class="section container contact-section"
