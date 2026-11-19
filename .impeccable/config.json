@@ -38,6 +38,28 @@
         ],
         "createdAt": "2026-11-18T23:20:07.415Z",
         "reason": "Codex review: preserve the incumbent cyan lighting documented in docs/frontend/DESIGN.md; this scoped project addition reuses the existing shared visual system."
+      },
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "project-cubesat-thermal.html",
+          "project-enova-person-following.html",
+          "project-smart-home-shutters.html"
+        ],
+        "createdAt": "2026-11-19T22:22:40.776Z",
+        "reason": "Codex review: the only image without src is inside the closed photo-dialog; robotics.js sets image.src from the gallery link before showModal. No visible broken image."
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "project-cubesat-thermal.html",
+          "project-enova-person-following.html",
+          "project-smart-home-shutters.html"
+        ],
+        "createdAt": "2026-11-19T22:22:40.890Z",
+        "reason": "Codex review: preserve the incumbent cyan lighting documented in docs/frontend/DESIGN.md, consistent with the existing file-scoped exceptions. This task updates CV links only."
       }
     ]
   }
