@@ -1,0 +1,44 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-18T23:20:07.261Z",
+        "reason": "Codex review: preserve the incumbent cyan lighting documented in docs/frontend/DESIGN.md; this scoped project addition reuses the existing shared visual system."
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "edge-ai.html"
+        ],
+        "createdAt": "2026-11-18T23:20:07.311Z",
+        "reason": "Codex review: preserve the incumbent cyan lighting documented in docs/frontend/DESIGN.md; this scoped project addition reuses the existing shared visual system."
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "project-robodog.html"
+        ],
+        "createdAt": "2026-11-18T23:20:07.362Z",
+        "reason": "Codex review: preserve the incumbent cyan lighting documented in docs/frontend/DESIGN.md; this scoped project addition reuses the existing shared visual system."
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "project-tor-navigation.html"
+        ],
+        "createdAt": "2026-11-18T23:20:07.415Z",
+        "reason": "Codex review: preserve the incumbent cyan lighting documented in docs/frontend/DESIGN.md; this scoped project addition reuses the existing shared visual system."
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_6",
+  "job_id": "9335584b-c52d-4358-b7a0-9e7b437b430d",
+  "sources": [
+    "tor-webots-original.png",
+    "tor-mapping-original.png"
+  ],
+  "output": "tor-autonomous-navigation.png",
+  "display_asset": "tor-autonomous-navigation.webp",
+  "purpose": "Illustrative autonomous cafe navigation cover inspired by the user's Webots and mapping screenshots.",
+  "parameters": {
+    "prompt": "Create ONE premium professional robotics portfolio cover, landscape 3:2, using these TWO real project screenshots as references. Image 1 shows the user's Webots cafe simulation: a compact grey wheeled service/delivery robot with open tray shelves, wooden tables and chairs, and red-brown/cream checkerboard floor tiles. Image 2 shows its dark LiDAR navigation dashboard: a mapped indoor floor area, cyan scan points, a robot position and delivery targets. Preserve the service robot type, cafe setting and indoor navigation subject from these references. This project is autonomous cafe delivery/navigation in ROS 2 and Webots; it is NOT a quadruped project.\n\nArt direction: a highly polished, photorealistic engineering/architectural visualization inspired by this simulation, with the finish of a premium robotics product campaign. Reconstruct the reference robot conservatively as a practical compact light-grey and graphite wheeled delivery platform with a low sturdy base, real wheels, a central open support frame and several service trays. The complete robot should be clearly visible and prominent in the foreground, roughly 55–65% of frame height, three-quarter view with enough margin around its wheels and top for portfolio card crops. Do not replace it with a humanoid, robot dog, futuristic fantasy machine or large industrial manipulator. Give the robot credible structural details, matte white-grey surfaces, restrained metal finishes and realistic contact shadows without inventing elaborate sensor equipment.\n\nPlace it in an elegant but recognizable version of the reference cafe: retain the red-brown and cream tiled floor, a few warm wooden tables and chairs, calm indoor lighting. Use a composed lower camera angle than the distant top-down simulator screenshot, natural architectural depth, subtle background defocus, and a darker charcoal/navy background treatment that fits an engineering portfolio. Keep the robot sharp and naturally lit. The environment supports the robot rather than competing with it.\n\nExpress autonomous navigation with only a restrained thin cyan route drawn close to the floor leading naturally around a table toward a delivery position, plus a few subtle cyan LiDAR-like scan points near nearby obstacle boundaries, visually inspired by image 2. These are illustrative technical cues, not a fake measured result. No huge holographic map, no floating dashboard, no decorative cyber grid, no excessive glow. Avoid large areas of empty floor.\n\nUse professional product photography lighting, soft large key light, realistic material roughness, balanced contrast and elegant color grading. Keep all relevant robot parts within the image, with comfortable crop-safe margins. Remove the entire Webots editor, toolbars, code panels, lists, playback controls, dashboard UI, labels, text, names, numbers, logos and watermarks. No people or faces. No text or typography anywhere. The image is a designed illustration based on simulation and should not purport to document fabricated physical hardware.",
+    "aspect_ratio": "3:2",
+    "reference_images": [
+      "1a557c12-4e8d-4d03-86be-9ed76983d68a",
+      "e357ac74-3148-45f7-9901-d553b9391e1b"
+    ],
+    "quality": "high",
+    "resolution": "2k",
+    "output_format": "png"
+  }
+}

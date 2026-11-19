@@ -3293,11 +3293,12 @@ body .back-link, body .text-link { display: inline-flex; align-items: center; mi
 }
 .home-project-meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
   color: #a9b7cd;
-  font: 10px/1.5 var(--mono);
+  font: 12px/1.5 var(--mono);
   letter-spacing: .025em;
 }
 .home-project-meta span:last-child { flex-shrink: 0; color: #8490aa; }

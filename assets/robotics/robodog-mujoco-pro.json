@@ -1,0 +1,23 @@
+{
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_6",
+  "job_id": "b9b26063-484e-4ec7-8f2c-f1997a1e11cb",
+  "source": "robodog-mujoco-original.png",
+  "output": "robodog-mujoco-pro.png",
+  "purpose": "Illustrative product rendering inspired by the user-provided MuJoCo simulation screenshot.",
+  "parameters": {
+    "model": "gpt_image_2_6",
+    "aspect_ratio": "3:2",
+    "count": 1,
+    "quality": "high",
+    "resolution": "2k",
+    "output_format": "png",
+    "medias": [
+      {
+        "role": "image",
+        "value": "e645fef6-ffa9-46df-8d48-57ed1214e497"
+      }
+    ],
+    "prompt": "Create one exceptionally polished, professional robotics portfolio hero image based on the orange-and-black quadruped visible in this real MuJoCo simulation screenshot. The screenshot is the subject reference, not the desired composition. Extract its identity: compact low rectangular orange main chassis, four articulated black legs, orange foot accents. Remove the entire desktop interface, sidebars, menus, black bars and pale background. Reconstruct the tiny subject with the visual sophistication of a high-end mechanical CAD product render, while preserving the overall silhouette and colors. This is an illustrative design visualization inspired by a simulation, not documentary evidence of manufactured hardware.\n\nArt direction: premium industrial engineering photography with credible manufacturable design. Orange powder-coated aluminum chassis with precise chamfered edges, restrained fine panel seams and discreet fasteners; a graphite structural underbody; articulated machined black legs with recognizable compact hip and knee rotary actuator housings, subtle brushed-metal bearing caps, realistic mechanical connections and textured rubber feet. Refined proportions and engineering detail, never chunky toy-like limbs or a single featureless cube. Exactly four complete legs with coherent joint chains, all four feet visibly grounded. No added head, no manipulator arm, no additional payloads, no decorative sci-fi armor.\n\nCamera and layout: beautiful front three-quarter product view from slightly above body level, 70mm product photography lens character. Complete robot centered, occupying 65 to 70 percent of the image width. Leave comfortable margins around all four feet and above the chassis to support portfolio card crops. Clean, confident editorial composition; robot is the only subject.\n\nLighting and materials: controlled large softbox key light, precise neutral fill that reveals the black mechanical details, delicate cool edge separation. Matte midnight navy and charcoal seamless studio backdrop and floor, grounded soft contact shadows, faint physically plausible floor reflection. Vivid but natural orange metal, subtle material roughness, crisp beautifully resolved joints, photorealistic global illumination. Keep the entire robot readable and sharp; avoid muddy dark legs.\n\nNo typography, letters, logos, watermarks, menus, UI panels, infographic labels, people, extra robots, neon halos, particles or background grid. Produce a distinctive, technically convincing final visualization suitable for an engineering portfolio, not a blocky cartoon."
+  }
+}

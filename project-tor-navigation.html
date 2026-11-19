@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b1b" />
+    <meta name="description" content="Autonomous navigation with ROS 2, LiDAR mapping and delivery planning in Webots. Our team earned 4th place at TOR 4.0." />
+    <title>TOR 4.0 · Autonomous Navigation — Wannes Fraj</title>
+    <link href="assets/favicon.svg?v=wf2" rel="icon" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="robotics.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="world-edge robotics-case with-wallpaper project-page">
+    <div class="page-wallpaper" aria-hidden="true">
+      <img src="assets/edge-human-robot.webp" alt="" width="1536" height="1024" fetchpriority="high" />
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main navigation">
+        <a class="wordmark" href="index.html" aria-label="Wannes Fraj — homepage"><img class="monogram" src="assets/favicon.svg" alt="" width="34" height="34" aria-hidden="true" /><span>Wannes Fraj</span></a>
+        <div class="site-sections" role="group" aria-label="Portfolio sections">
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certificates</a>
+          <a href="index.html#beyond">Experience</a>
+          <a href="index.html#about">About me</a>
+        </div>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main class="container case-main" id="main">
+      <a class="back-link" href="index.html#projects">← All projects</a>
+      <header class="case-header">
+        <h1>TOR 4.0 · Autonomous Navigation</h1>
+        <p class="case-intro">Autonomous robot navigation and delivery using ROS 2, LiDAR mapping and route planning in a Webots café simulation. Our team earned 4th place at TOR 4.0.</p>
+        <div class="tags"><span>Autonomous Navigation</span><span>ROS 2</span><span>Webots</span><span>LiDAR</span><span>A*</span><span>Python</span></div>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/wannesfraj/CSTAM3.0-TOR4.0" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/wannesfraj/CSTAM3.0-TOR4.0/blob/main/demo.mp4" target="_blank" rel="noopener noreferrer">Watch the demo <span aria-hidden="true">↗</span></a>
+        </div>
+      </header>
+      <figure class="case-cover project-simulation-cover">
+        <div class="evidence-photo robot-cover">
+          <img src="assets/robotics/tor-autonomous-navigation.webp" alt="Service robot navigating a café with an illustrative route and LiDAR scan points — visualization inspired by the Webots simulation" width="2048" height="1360" decoding="async" />
+        </div>
+        <figcaption class="project-cover-caption">Illustration inspired by our Webots navigation simulation · <a href="assets/robotics/tor-webots-original.png" target="_blank" rel="noopener noreferrer">Original simulation ↗</a> · <a href="assets/robotics/tor-mapping-original.png" target="_blank" rel="noopener noreferrer">LiDAR mapping ↗</a></figcaption>
+      </figure>
+      <div class="case-layout" id="case-details">
+        <aside class="case-facts" aria-label="Project facts">
+          <div><span>CONTEXT</span><strong>CSTAM 3.0 · TOR 4.0</strong></div>
+          <div><span>RESULT</span><strong>4th place · Team result</strong></div>
+          <div><span>FOCUS</span><strong>Autonomous robot navigation and delivery</strong></div>
+          <div><span>ENVIRONMENT</span><strong>ROS 2 Humble · Webots</strong></div>
+          <div><span>SOURCE CODE</span><strong><a href="https://github.com/wannesfraj/CSTAM3.0-TOR4.0" target="_blank" rel="noopener noreferrer">CSTAM3.0-TOR4.0 on GitHub ↗</a></strong></div>
+        </aside>
+        <div>
+          <section class="case-section">
+            <h2>From sensing to navigation</h2>
+            <p>The Fabtino system connects a Webots robot simulation to ROS 2 and a web dashboard. Wheel encoders, an IMU and LiDAR support localization and mapping, giving the robot an estimated position within its environment.</p>
+            <figure class="case-cover project-simulation-cover project-map-figure">
+              <a class="evidence-photo project-map-link" href="assets/robotics/tor-mapping-original.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size LiDAR mapping screenshot">
+                <img src="assets/robotics/tor-mapping-original.png" alt="Fabtino LiDAR mapping dashboard showing the scanned indoor map, the robot position, three delivery destinations and the delivery queue" width="1335" height="697" loading="lazy" decoding="async" />
+              </a>
+              <figcaption class="project-cover-caption">LiDAR mapping and delivery destinations · <a href="assets/robotics/tor-mapping-original.png" target="_blank" rel="noopener noreferrer">View full size ↗</a></figcaption>
+            </figure>
+          </section>
+          <section class="case-section">
+            <h2>Planning delivery missions</h2>
+            <p>An A* planner finds routes around obstacles and denied zones. Delivery missions combine ordered stops, arrival delays and a return to base, with a safety supervisor checking movement commands.</p>
+          </section>
+          <section class="case-section">
+            <h2>A dashboard for the operator</h2>
+            <p>The browser interface supports manual driving, map import and export, destination placement and delivery scheduling. Live telemetry connects the operator’s controls with the simulated robot.</p>
+          </section>
+          <section class="case-section">
+            <h2>Fourth place at TOR 4.0</h2>
+            <p>Our team placed fourth in TOR 4.0. The repository includes the navigation system, simulation setup and a video demonstration.</p>
+          </section>
+        </div>
+      </div>
+      <div class="case-bottom" id="contact">
+        <div><h2>Have a project in mind?</h2></div>
+        <a class="button primary" href="mailto:wannesfrajj@gmail.com">Contact Wannes ↗</a>
+        <a class="text-link" href="index.html#projects">Back to all projects ←</a>
+      </div>
+    </main>
+    <footer class="container footer">
+      <a class="wordmark" href="index.html"><img class="monogram" src="assets/favicon.svg" alt="" width="34" height="34" aria-hidden="true" /><span>Wannes Fraj</span></a>
+      <p>© <span id="year">2026</span> Wannes Fraj</p>
+      <a href="art/thermal-study.html">Generative visual study <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
+</html>

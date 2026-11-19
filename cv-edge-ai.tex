@@ -1,0 +1,319 @@
+%
+% CV – EDGE IA
+% Author: Wannes Fraj
+% Email: wannesfrajj@gmail.com
+%
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+\definecolor{darkblue}{RGB}{0,0,139}
+
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.4cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt, right=0pt, top=0pt, bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt, outer arc=0pt,
+}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8.5pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item{\textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}}
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} & \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont}
+
+% ─────────────────────────────────────────────
+\begin{document}
+\headerfontiii
+
+% ── HEADER ───────────────────────────────────
+\begin{center}
+    {\Huge\textbf{Wannes Fraj}}\\[2pt]
+    {\small Edge IA Engineer}
+\end{center}
+
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faPhone}\;+216 94 550 448 \;|\;
+    \socialicon{\faEnvelope}\;\href{mailto:wannesfrajj@gmail.com}{wannesfrajj@gmail.com} \;|\;
+    \socialicon{\faLinkedin}\;\href{https://www.linkedin.com/in/wannes-fraj-214820387/}{wannes-fraj} \;|\;
+    \socialicon{\faGithub}\;\href{https://github.com/wannes243}{wannes243} \;|\;
+    \socialicon{\faMapMarker*}\;Monastir, Tunisia
+    }
+\end{center}
+
+\vspace{-4mm}
+
+% ── SUMMARY ──────────────────────────────────
+\section{\textbf{Summary}}
+\vspace{1mm}
+
+\small{
+Industrial Computer Engineering student at ENET'Com, focused on robotics, Edge AI, and embedded systems. Experienced with \textbf{ROS 2}, autonomous navigation, computer vision, deep learning, and IoT, with hands-on work on real-time perception and intelligent robotic systems. Familiar with embedded development and AI deployment for connected and autonomous applications.
+}
+
+\vspace{-2mm}
+
+% ── EDUCATION ────────────────────────────────
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {National School of Electronics and Telecommunications of Sfax(ENET'Com)}{Sfax, Tunisia}
+  {Industrial Computer Engineering}{2025 -- Present}
+
+\resumeSubheading
+  {Faculty of Sciences of Monastir}{Monastir, Tunisia}
+  {Preparatory Cycle in Physics and Chemistry}{2023 -- 2025}
+
+\resumeSubHeadingListEnd
+
+\vspace{-6mm}
+
+% ── EXPERIENCE ───────────────────────────────
+\section{\textbf{Experience}}
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Enova Robotics}{Sousse, Tunisia}
+  {Deep Learning \& Computer Vision Intern}{June -- July 2026}
+\resumeItemListStart
+  \item Designed and implemented a full \textbf{ROS2}-based intelligent person-following system, structured into four communicating nodes: camera stream, person detector, distance estimator, and follow controller.
+  \item Built a custom \textbf{deep learning} dataset from self-captured photos to train a \textbf{YOLOv8} model for real-time person detection with \textbf{ByteTrack}, feeding detections into \textbf{Depth Anything V2} for distance estimation.
+  \item Identified the target person through facial recognition with \textbf{DeepFace} (FaceNet), fusing computer vision and deep learning into one real-time \textbf{ROS2} perception pipeline.
+\resumeItemListEnd
+\resumeSubheading
+  {Tunipage --- NA Consulting}{Monastir, Tunisia}
+  {AI \& DevOps Intern}{July 2026 -- Present}
+
+\resumeItemListStart
+  \item Redesigned the \textbf{backend architecture}, API layer and data flow to fix a broken \textbf{OpenAI API} integration and make the \textbf{Django} AI feature \textbf{scalable} and \textbf{reliable} in production, eliminating server crashes under load.
+  \item Owned deployment end to end: \textbf{Docker} images, \textbf{Kubernetes} orchestration, and \textbf{GitLab CI/CD} pipelines.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-8mm}
+
+% ── TECHNICAL STACK ───────────────────────────
+\section{\textbf{Technical Stack}}
+\vspace{-0.4mm}
+
+\resumeHeadingSkillStart
+
+  \resumeSubItem{Languages:}
+    {Python, C, C++, Java, JavaScript, MATLAB}
+
+  \resumeSubItem{Edge AI \& Computer Vision:}
+    {PyTorch, TensorFlow, Scikit-learn, YOLOv8}
+
+  \resumeSubItem{Robotics \& Navigation:}
+    {ROS 2, Nav2, SLAM, LiDAR, RViz, Gazebo}
+
+  \resumeSubItem{Embedded Systems \& IoT:}
+    {ESP32, MQTT, Mosquitto, Motor Control,Kafka}
+
+  \resumeSubItem{Deployment \& Development:}
+    {Docker, Kubernetes, FastAPI, MCP, GitLab CI/CD, Git, Linux}
+
+  \resumeSubItem{Data \& Simulation:}
+    {NumPy, Pandas, Matplotlib, Jupyter, Proteus 8, Feature Engineering}
+
+\resumeHeadingSkillEnd
+
+% ── PROJECTS ─────────────────────────────────
+\section{\textbf{Projects}}
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+
+\resumeProject
+  {RoboDog --- Reinforcement Learning}
+  {Tools: ROS 2, Python, MuJoCo, PID, PPO}
+  {}
+  {[\href{https://github.com/wannesfraj/RoboDog}
+  {\textcolor{darkblue}{\faGithub}}]}
+
+\resumeItemListStart
+  \item Tested \textbf{PID} control and \textbf{PPO} reinforcement learning for
+  quadruped locomotion, with PPO training in \textbf{MuJoCo}; selected among
+  the \textbf{top 2 projects}.
+\resumeItemListEnd
+
+\resumeProject
+  {TOR 4.0 --- Autonomous Navigation}
+  {Tools: ROS 2, Python, Webots, LiDAR, A*}
+  {}
+  {[\href{https://github.com/wannesfraj/CSTAM3.0-TOR4.0}
+  {\textcolor{darkblue}{\faGithub}}]}
+
+\resumeItemListStart
+  \item Built a \textbf{ROS 2} navigation system with \textbf{LiDAR} mapping,
+  \textbf{A*} planning and a web dashboard in a \textbf{Webots} simulation;
+  earned \textbf{4th place at TOR 4.0}.
+\resumeItemListEnd
+
+\resumeProject
+  {Smart Home --- Wireless Roller Shutter System}
+  {Tools: ESP32, C++, MQTT, BLE, Flutter, PlatformIO}
+  {2026}
+  {[\href{https://github.com/wannes243/Volets-Connect-s-Application-Flutter-Firmware-ESP32}
+  {\textcolor{darkblue}{\faGithub}}]}
+
+\resumeItemListStart
+  \item Built ESP32 firmware and a Flutter application for real-time shutter
+  control using \textbf{MQTT}, \textbf{BLE}, and manual override.
+\resumeItemListEnd
+
+\resumeProject
+  {EventPlanner --- Agentic AI Chatbot
+  \textnormal{{\small\textit{(2nd Place --- N8N Hackathon)}}}}
+  {Tools: N8N, LLMs, Agentic Workflows, REST APIs}
+  {2026}
+  {[\href{https://github.com/dridimohamedmortadha/EventPlanner}
+  {\textcolor{darkblue}{\faGithub}}]}
+
+\resumeItemListStart
+  \item Built an agentic chatbot automating event planning through multi-step
+  LLM orchestration, intent recognition, and real-time API retrieval.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ── CERTIFICATIONS ────────────────────────────
+\section{\textbf{Certifications}}
+\vspace{-0.2mm}
+
+\resumeSubHeadingListStart
+
+\resumePOR{}{
+  \href{https://learn.nvidia.com/certificates?id=EyxXZlxsQkmyEMXxsQ-U_}{
+  \textbf{Deep Learning} -- NVIDIA DLI}}{2026}
+
+\resumeSubHeadingListEnd
+
+% ── VOLUNTEER ────────────────────────────────
+\section{\textbf{Volunteering}}
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Webmaster}
+  {IEEE ENET'Com WIE Student Affinity Group}
+  {Jan 2026 -- Present}
+  {}
+
+\resumeItemListStart
+  \item Managed the group's online presence, publication schedules, and digital communication for workshops and events.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

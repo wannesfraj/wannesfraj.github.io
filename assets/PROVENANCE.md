@@ -1,5 +1,17 @@
 # Visual sources
 
+## RoboDog and TOR projects — 2026-11-19
+
+- `robotics/robodog-mujoco-original.png`: the user's actual MuJoCo screenshot, preserved unchanged at 910 × 506 pixels.
+- `robotics/robodog-mujoco-pro.png`: high-quality product visualization generated in Higgsfield with GPT Image 2.6 from the supplied MuJoCo screenshot, job `b9b26063-484e-4ec7-8f2c-f1997a1e11cb`. An illustration inspired by the simulation, not documentary evidence of fabricated hardware. The exact prompt and generation settings are saved in `robotics/robodog-mujoco-pro.json`. The optimized `robotics/robodog-mujoco-pro.webp` display copy preserves the full 2048 × 1360 composition and is used on the homepage, robotics page and RoboDog detail page. Its caption links to the unchanged original simulation screenshot.
+
+- `robotics/robodog-control.svg`: original technical flow diagram based on the two control approaches documented in https://github.com/wannesfraj/RoboDog. It describes the simulation architecture; it is not a hardware photograph.
+- `robotics/robodog-quadruped.webp`: previous illustrative photograph of a Boston Dynamics Spot quadruped by Jonte (24 August 2023), from https://commons.wikimedia.org/wiki/File:Spot_by_Boston_Dynamics.jpg, licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). The 1280 × 853 Wikimedia preview was converted to WebP without cropping. Retained as an unused original asset after replacement with the MuJoCo-inspired visualization; it does not depict hardware built for this project.
+- `robotics/tor-navigation-dashboard.png`: previous project cover, retained as an unused original screenshot from https://github.com/wannesfraj/CSTAM3.0-TOR4.0/blob/main/tests/results/features-desktop.png.
+- `robotics/tor-webots-original.png` and `robotics/tor-mapping-original.png`: the user's Webots café simulation and LiDAR dashboard screenshots, preserved unchanged at 1318 × 570 and 1335 × 697. Both are linked in the TOR detail cover caption.
+- `robotics/tor-autonomous-navigation.png`: illustrative cover generated in Higgsfield with GPT Image 2.6 from those two screenshots, job `9335584b-c52d-4358-b7a0-9e7b437b430d`. The full 2048 × 1360 composition is delivered as `robotics/tor-autonomous-navigation.webp` on the homepage, robotics card and TOR detail page. The café robot, route and scan points are a designed visualization of the simulation, not evidence of physical hardware or a measured route. The accepted prompt and generation settings are saved in `robotics/tor-autonomous-navigation.json`.
+- Project descriptions come from the linked repositories. The user supplied the team results: RoboDog selected among the top two projects; fourth place in TOR 4.0. No competition date or additional performance result is asserted.
+
 ## Experience carousel — 2026-09-19
 
 - `robotics/enova-logo.png`: official ENOVA Robotics logo, downloaded unchanged from https://www.enovarobotics.eu/wp-content/uploads/2020/03/logoEnovaRobotics-1.png (organization logo declared on its official website).

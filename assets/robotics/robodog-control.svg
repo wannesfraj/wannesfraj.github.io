@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="625" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc">
+  <title id="title">RoboDog control architecture</title>
+  <desc id="desc">Classical inverse kinematics or a PPO policy generates joint targets for the quadruped simulation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="m0 0 8 4-8 4" fill="none" stroke="#62e3ed" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1000" height="625" fill="#0c1526"/>
+  <g font-family="Arial, sans-serif">
+    <text x="64" y="104" fill="#f5f5ff" font-size="56" font-weight="600">RoboDog</text>
+    <text x="66" y="148" fill="#b9c9db" font-size="24">Quadruped locomotion · ROS 2</text>
+    <g fill="#14283b" stroke="#4d879b" stroke-width="2">
+      <rect x="64" y="212" width="396" height="104" rx="12"/>
+      <rect x="540" y="212" width="396" height="104" rx="12"/>
+      <rect x="292" y="388" width="416" height="80" rx="12"/>
+    </g>
+    <g fill="#f5f5ff" font-size="28" text-anchor="middle">
+      <text x="262" y="254">Classical control</text>
+      <text x="738" y="254">PPO policy</text>
+      <text x="500" y="439">Joint targets</text>
+    </g>
+    <g fill="#b9c9db" font-size="20" text-anchor="middle">
+      <text x="262" y="289">Inverse kinematics / gait</text>
+      <text x="738" y="289">Reinforcement learning</text>
+    </g>
+    <g fill="none" stroke="#62e3ed" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M262 316v32h238v32"/>
+      <path d="M738 316v32H500" marker-end="none"/>
+      <path d="M500 468v48"/>
+    </g>
+    <text x="500" y="559" fill="#a6edf0" font-size="28" text-anchor="middle">Quadruped simulation</text>
+  </g>
+</svg>

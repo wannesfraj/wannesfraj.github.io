@@ -272,6 +272,11 @@
   letter-spacing: -1px;
   margin: 12px 0 18px;
 }
+.robotics-card-copy .project-type {
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+}
 .robotics-card-copy .tags {
   min-height: 60px;
   align-content: flex-start;
@@ -1245,6 +1250,25 @@
   font-size: 13px;
   line-height: 1.6;
   color: var(--muted);
+}
+.project-cover-caption {
+  padding: 15px 20px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.project-simulation-cover > .evidence-photo {
+  aspect-ratio: auto;
+}
+.project-simulation-cover > .evidence-photo img {
+  height: auto;
+  object-fit: contain;
+}
+.project-map-figure {
+  margin-top: 24px;
+}
+.project-map-link {
+  display: block;
 }
 @media (min-width: 821px) {
   .robotics-card-copy h3 {

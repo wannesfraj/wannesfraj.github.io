@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b1b" />
+    <meta name="description" content="RoboDog: quadruped locomotion tested with PID control and PPO reinforcement learning, with the PPO policy trained in MuJoCo." />
+    <title>RoboDog · Reinforcement Learning — Wannes Fraj</title>
+    <link href="assets/favicon.svg?v=wf2" rel="icon" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="robotics.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="world-edge robotics-case with-wallpaper project-page">
+    <div class="page-wallpaper" aria-hidden="true">
+      <img src="assets/edge-human-robot.webp" alt="" width="1536" height="1024" fetchpriority="high" />
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main navigation">
+        <a class="wordmark" href="index.html" aria-label="Wannes Fraj — homepage"><img class="monogram" src="assets/favicon.svg" alt="" width="34" height="34" aria-hidden="true" /><span>Wannes Fraj</span></a>
+        <div class="site-sections" role="group" aria-label="Portfolio sections">
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certificates</a>
+          <a href="index.html#beyond">Experience</a>
+          <a href="index.html#about">About me</a>
+        </div>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main class="container case-main" id="main">
+      <a class="back-link" href="index.html#projects">← All projects</a>
+      <header class="case-header">
+        <h1>RoboDog</h1>
+        <p class="case-intro">We tested PID control and PPO reinforcement learning for quadruped locomotion, training the PPO policy in MuJoCo.</p>
+        <div class="tags"><span>Reinforcement Learning</span><span>PID</span><span>PPO</span><span>ROS 2</span><span>Gazebo</span><span>MuJoCo</span><span>Python</span></div>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/wannesfraj/RoboDog" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#case-details">Explore the project <span aria-hidden="true">↓</span></a>
+        </div>
+      </header>
+      <figure class="case-cover project-simulation-cover">
+        <div class="evidence-photo robot-cover">
+          <img src="assets/robotics/robodog-mujoco-pro.webp" alt="Orange-and-black RoboDog quadruped — illustration inspired by the MuJoCo simulation" width="2048" height="1360" decoding="async" />
+        </div>
+        <figcaption class="project-cover-caption">Illustration inspired by our MuJoCo simulation · <a href="assets/robotics/robodog-mujoco-original.png" target="_blank" rel="noopener noreferrer">View original screenshot ↗</a></figcaption>
+      </figure>
+      <div class="case-layout" id="case-details">
+        <aside class="case-facts" aria-label="Project facts">
+          <div><span>RESULT</span><strong>Selected among the top 2 projects · Team selection</strong></div>
+          <div><span>FOCUS</span><strong>PID control and reinforcement learning</strong></div>
+          <div><span>ENVIRONMENT</span><strong>ROS 2 Humble · Gazebo Classic · MuJoCo</strong></div>
+          <div><span>SOURCE CODE</span><strong><a href="https://github.com/wannesfraj/RoboDog" target="_blank" rel="noopener noreferrer">RoboDog on GitHub ↗</a></strong></div>
+        </aside>
+        <div>
+          <section class="case-section">
+            <h2>A quadruped in simulation</h2>
+            <p>RoboDog uses a four-legged robot model with twelve joints. A ROS 2 workspace brings together the model, control interfaces and simulation tools to explore how joint commands produce coordinated leg motion.</p>
+          </section>
+          <section class="case-section">
+            <h2>Testing PID control</h2>
+            <p>We tested PID control for the quadruped and used inverse kinematics to translate body and foot targets into joint angles, exploring posture, foot placement and gait timing in simulation.</p>
+          </section>
+          <section class="case-section">
+            <h2>Training PPO in MuJoCo</h2>
+            <p>We also tested PPO (Proximal Policy Optimization), a reinforcement learning approach. We trained the PPO policy in MuJoCo to generate joint-position targets from sensor observations and velocity commands.</p>
+          </section>
+          <section class="case-section">
+            <h2>Top 2 selection</h2>
+            <p>Our team’s RoboDog project was selected among the top two projects. The linked repository documents the simulation work and both control approaches.</p>
+          </section>
+        </div>
+      </div>
+      <div class="case-bottom" id="contact">
+        <div><h2>Have a project in mind?</h2></div>
+        <a class="button primary" href="mailto:wannesfrajj@gmail.com">Contact Wannes ↗</a>
+        <a class="text-link" href="index.html#projects">Back to all projects ←</a>
+      </div>
+    </main>
+    <footer class="container footer">
+      <a class="wordmark" href="index.html"><img class="monogram" src="assets/favicon.svg" alt="" width="34" height="34" aria-hidden="true" /><span>Wannes Fraj</span></a>
+      <p>© <span id="year">2026</span> Wannes Fraj</p>
+      <a href="art/thermal-study.html">Generative visual study <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
+</html>

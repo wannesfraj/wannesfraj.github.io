@@ -38,6 +38,7 @@
   "webots": "https://raw.githubusercontent.com/cyberbotics/webots/master/resources/icons/core/webots64x64.png (official original icon, used without recoloring)",
   "slam": "Code-native mapping/localisation pictogram; SLAM has no universal product logo",
   "omnetpp": "https://raw.githubusercontent.com/omnetpp/omnetpp/omnetpp-6.x/images/logo/logo128.png",
+  "mujoco": "https://raw.githubusercontent.com/google-deepmind/mujoco/main/doc/_static/favicons/favicon-192x192.png (official MuJoCo icon, used without recoloring)",
   "labview": "https://www.pngkey.com/png/full/802-8022387_ni-labview-2017-logo.png (high-resolution transparent National Instruments LabVIEW wordmark)",
   "redis": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg",
   "nodejs": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
